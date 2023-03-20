@@ -6,6 +6,7 @@
   --collection-img-gap: 24px;
   --active-color: #404bbf;
   --border-color: #e7e9fc;
+  --animation: 250ms;
 }
 h1,
 h2,
@@ -86,7 +87,11 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--main-text-color);
+
+  transition: color var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-tools,
 .navigation {
@@ -121,6 +126,9 @@ body {
   color: var(--second-text-color);
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-link:hover,
 .adress-link:focus {
@@ -200,6 +208,10 @@ body {
   min-width: 170px;
   text-align: center;
   border: 1px solid transparent;
+
+  transition: background-color var(--animation);
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -221,6 +233,9 @@ body {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   flex-direction: row;
+
+  transition: background-color var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .margin:not(:last-child) {
   margin-right: 24px;
@@ -376,6 +391,9 @@ body {
   justify-content: center;
   margin-bottom: 32px;
   margin-top: 8px;
+
+  transition: color var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -426,6 +444,10 @@ body {
 .portfolio-link {
   text-decoration: none;
   display: block;
+  outline: transparent;
+
+  transition: box-shadow var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -451,9 +473,13 @@ body {
   align-items: center;
   padding: 16px 32px;
   fill: #8e8f99;
+
   border: 1px solid #8e8f99;
   border-radius: 4px;
   outline: transparent;
+
+  transition: fill var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons-link:hover,
 .customers-icons-link:focus {
@@ -517,6 +543,9 @@ body {
   margin-bottom: 0px;
   margin-top: 16px;
   gap: 16px;
+
+  transition: color var(--animation);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
