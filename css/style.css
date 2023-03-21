@@ -103,7 +103,6 @@ body {
 }
 .current {
   position: relative;
-  color: var(--active-color);
 }
 
 .current ::after {
@@ -234,7 +233,7 @@ body {
   text-align: center;
   border: 1px solid transparent;
 
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), color var(--animation);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
@@ -263,7 +262,7 @@ body {
 
   border-radius: 4px;
 
-  transition: background-color var(--animation) color var(--animation)
+  transition: background-color var(--animation), color var(--animation),
     box-shadow var(--animation);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -539,7 +538,7 @@ body {
   border-radius: 4px;
   outline: transparent;
 
-  transition: fill var(--animation) border var(--animation);
+  transition: fill var(--animation), border var(--animation);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons-link:hover,
