@@ -622,8 +622,6 @@ body {
 
   opacity: 100;
 
-  pointer-events: none;
-
   transition: opacity var(--animation) linear, visibility var(--animation);
 }
 
